@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Title</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Ajouter du style personnalisé si nécessaire */
+    img {
+      display: block; /* Pour centrer correctement les images */
+      margin: 0 auto; /* Pour centrer horizontalement */
+    }
+    .centered-video {
+      display: block;
+      margin: 0 auto;
+      width: 800px; /* Vous pouvez ajuster cette valeur selon vos besoins */
+      height: 450px; /* Vous pouvez ajuster cette valeur selon vos besoins */
+    }
+
+  </style>
+</head>
+<body>
+<div class="container py-4">
+  <div class="row justify-content-center">
+    <div class="col-md-6 border p-4 text-center">
+      <h3>Côté User</h3>
+    </div>
+  </div>
+</div>
+
+<div class="container text-center">
+  <div style="text-align: center">
+
+    <h4>Connexion par un éleve de BTS SIO 1
+
+    </h4>
+  </div>
+  <video class="centered-video" controls>
+    <source src="https://ychichpo.github.io/yoel_ch/MyRessources/user-1-V2.mov" type="video/mp4">
+    <!-- Message à afficher si le navigateur ne peut pas afficher la vidéo -->
+    Votre navigateur ne supporte pas la lecture de vidéos.
+  </video><br/>
+  <div style="text-align: center">
+
+    <h4>Connexion par un éleve de MASTER 2
+
+    </h4>
+  </div>
+  <video class="centered-video" controls>
+    <source src="https://ychichpo.github.io/yoel_ch/MyRessources/user-2.mov" type="video/mp4">
+    <!-- Message à afficher si le navigateur ne peut pas afficher la vidéo -->
+    Votre navigateur ne supporte pas la lecture de vidéos.
+  </video>
+</div>
+
+<!-- Bootstrap JS (facultatif, seulement si vous en avez besoin) -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

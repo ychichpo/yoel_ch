@@ -2,22 +2,52 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HELPORT - Version Web</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa; /* Couleur de fond */
+        }
+        .container {
+            padding-top: 50px;
+        }
+        h1, h3 {
+            color: black; /* Couleur du texte */
+        }
+        .btn-learn {
+            margin-top: 20px;
+            margin-right: 10px; /* Espacement entre les boutons */
+        }
+        .text-frame {
+            border: 2px solid #007bff; /* Bordure de 2px solide bleue */
+            padding: 10px; /* Espace intérieur */
+        }
+    </style>
 </head>
 <body>
 
-
-<div style="text-align: center">
-
-    <h1>WELPORT </h1>
-    <h3>Version Web</h3>
-
-
-    <img src="../../MyRessources/demandes.png" width="60%"><br/>
-    <img src="../../MyRessources/competences.png" width="60%"><br/>
-
-
+<div class="container">
+    <div class="text-center">
+        <h1>HELPORT</h1>
+        <h3>Version Web</h3>
+        <a class="btn btn-primary btn-lg btn-learn" href="/templates/Display/PHP/cote_user.html">
+            Afficher côté utilisateur <i class="fas fa-desktop"></i>
+        </a>
+        <a class="btn btn-primary btn-lg btn-learn" href="/templates/Display/PHP/cote_admin.html">
+            Afficher côté Admin <i class="fas fa-desktop"></i>
+        </a>
+        <div class="text-frame mt-5">
+            <p>Ceci est une zone de texte encadrée en Bootstrap.</p>
+            <p>Ce texte est juste une simulation et peut être remplacé par votre propre contenu.</p>
+        </div>
+    </div>
 </div>
 
+<!-- Bootstrap JS (facultatif, seulement si vous en avez besoin) -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
