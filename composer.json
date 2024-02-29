@@ -1,0 +1,26 @@
+{
+  "name": "yoelchicheportiche/jackson-master",
+  "autoload": {
+    "psr-4": {
+      "Yoelchicheportiche\\JacksonMaster\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "yoelchicheportiche",
+      "email": "yoelchiche3112@gmail.com"
+    }
+  ],
+  "require-dev": {
+    "symfony/symfony": "^7.0"
+  },
+  "require": {
+    "symfony/runtime": "^7.0",
+    "symfony/console": "*"
+  },
+  "config": {
+    "allow-plugins": {
+      "symfony/runtime": true
+    }
+  }
+}
