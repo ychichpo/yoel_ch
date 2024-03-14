@@ -3,14 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+    </style>
 </head>
 <body>
 <h3>Projet Evenementiels</h3>
 <div class="container" style="width: 80%;text-align: center">
-  <img src="/MyRessources/projets/events/class%20apex.png" class="image">
-  <img src="/MyRessources/projets/events/flow.png" class="image">
-  <img src="/MyRessources/projets/events/renduDetail.png" class="image">
-  <img src="/MyRessources/projets/events/renduRelated.png" class="image">
+  <img src="https://ychichpo.github.io/yoel_ch/MyRessources/projets/events/class%20apex.png" class="image">
+  <img src="https://ychichpo.github.io/yoel_ch/MyRessources/projets/events/flow.png" class="image">
+  <img src="https://ychichpo.github.io/yoel_ch/MyRessources/projets/events/renduDetail.png" class="image">
+  <img src="https://ychichpo.github.io/yoel_ch/MyRessources/projets/events/renduRelated.png" class="image">
 </div>
 </body>
 </html>
