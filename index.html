@@ -77,10 +77,7 @@
 					</ul>
 				</div>
 			</nav>
-			<div id="timer" style="margin-top: 20px;">
-				<button onclick="startTimer()">Activer la Minuterie</button>
-				<h2 id="countdown">10:00</h2>
-			</div>
+
 
 
 			<div class="colorlib-footer">
@@ -560,30 +557,7 @@ Copyright <script>document.write(new Date().getFullYear());</script> All rights 
 	<script src="js/main.js"></script>
 	<!--<script src="MyRessources/myScripts.js"></script>-->
 
-	<script>
-		var start = 10 * 60; // temps en secondes (10 minutes)
-		var display = document.getElementById('countdown');
-		var timer;
 
-		function startTimer() {
-			var current = start;
-			clearInterval(timer); // Arrête la minuterie précédente si nécessaire
-			timer = setInterval(function() {
-				var minutes = parseInt(current / 60, 10);
-				var seconds = parseInt(current % 60, 10);
-
-				minutes = minutes < 10 ? "0" + minutes : minutes;
-				seconds = seconds < 10 ? "0" + seconds : seconds;
-
-				display.textContent = minutes + ":" + seconds;
-
-				if (--current < 0) {
-					clearInterval(timer);
-					display.textContent = "00:00";
-				}
-			}, 1000);
-		}
-	</script>
 
 
 	</body>
